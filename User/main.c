@@ -18,12 +18,12 @@ int main() {
     lv_init();
     lv_port_disp_init();
     repeating_timer_init();
-    // lv_demo_benchmark();
-    ui_init();
+     lv_demo_benchmark();
+    //ui_init();
 
     while (1) {
         lv_task_handler();
-        lv_timer_handler();
+       // lv_timer_handler();
         //gpio_xor_mask(1 << LED_PIN);
         //  printf("Hello, world! %lu\n", cnt++);
         sleep_ms(10);
